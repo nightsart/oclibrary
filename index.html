@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OC Library</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>OC Library</h1>
+
+            <div class="filters">
+                <div>
+                    <button style="width: 40px;" data-category="all" data-type="reset">All</button>
+                </div>
+                <div>
+                    <button style="background-color: rgba(168, 4, 37, 0.322);" data-category="Runes" data-type="filter">Runes</button>
+                    <button style="background-color: rgba(192, 136, 218, 0.76);" data-category="LS" data-type="filter">𝓵ost 𝓼ouls</button>
+                </div>
+                <div>
+                    <button style="background-color: rgba(168, 4, 37, 0.322);" data-category="Gang" data-type="filter">Gang</button>
+                    <button style="background-color: rgba(168, 4, 37, 0.322);" data-category="envision" data-type="filter">Σnvision</button>
+                </div>
+                <div>
+                    <button style="background-color: rgba(168, 4, 37, 0.322);" data-category="Cops" data-type="filter">Authorities</button>
+                    <button style="background-color: rgba(168, 4, 37, 0.322);" data-category="Others" data-type="filter">Others</button>
+                </div>
+                <div>
+                    <button style="background-color: rgba(192, 136, 218, 0.76);" data-category="LSH" data-type="filter">Hershia</button>
+                    <button style="background-color: rgba(192, 136, 218, 0.76);" data-category="LSE" data-type="filter">Eenria</button>
+                </div>
+                <div>
+                    <button style="border:none;" data-category="Night" data-type="filter">Night's</button>
+                    <button style="border:none;" data-category="Dj" data-type="filter">Dj's</button>
+                </div>
+                <div>
+                    <button  style="width: 40px;" data-category="Female" data-type="filter">♀</button>
+                    <button  style="width: 40px;" data-category="Male" data-type="filter">♂</button>
+                </div>
+                <div>
+                    <button style="border:none;" data-category="Human" data-type="filter">Human</button>
+                    <button style="border:none;" data-category="Hybrid" data-type="filter">Hybrid</button>
+                </div>
+                <input type="text" id="searchProduct" placeholder="Search">
+            </div>
+
+            <div class="products">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+            <h3>By <a href="https://night-sart.carrd.co">@night_sart</a></h3>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
