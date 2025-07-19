@@ -25,9 +25,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
-    min-width: 400px;
-    padding: 50px;
+    max-width: 75rem;
+    min-width: 30rem;
+    padding: 3rem;
 }
 
 .characterContainer>h1 {
