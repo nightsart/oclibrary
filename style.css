@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fuzzy+Bubbles:wght@400;700&family=Quicksand:wght@300..700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
 }
 
 body {
@@ -25,9 +26,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 75rem;
-    min-width: 30rem;
-    padding: 3rem;
+    max-width: 1200px;
+    min-width: 400px;
+    padding: 50px;
 }
 
 .characterContainer>h1 {
@@ -35,8 +36,7 @@ body {
     color: #fff;
     text-shadow: #000 1px 1px;
     margin-bottom: 20px;
-    letter-spacing: 10px;
-    min-width: 310px;
+    letter-spacing: 0.4em;
 }
 
 .filters {
@@ -99,7 +99,7 @@ select {
     gap: 10px;
     justify-content: center;
     color:#ccc;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.8;
 }
 
@@ -120,15 +120,19 @@ select {
 }
 
 .attribution {
+    text-decoration: none;
     color: #fff;
-    margin-right: -150px;
-    margin-top: -25px;
+    margin-right: -175px;
+    margin-top: -30px;
     padding-bottom: 15px;
-    font-size:12px;
+    font-size:18px;
 }
 
 a:-webkit-any-link {
     color: #fff;
+    text-decoration: underline;
+    font-family: "Caveat", cursive;
+    letter-spacing: 0.05em;
 }
 
 .custom-popover {
@@ -136,6 +140,7 @@ a:-webkit-any-link {
     --bs-popover-header-color: #fff;
     --bs-popover-header-bg: #312e2e;
     --bs-popover-bg: #312e2e;
+    
 
     /* List of supported variables:
     --bs-popover-zindex:
@@ -159,4 +164,13 @@ a:-webkit-any-link {
     --bs-popover-arrow-height:
     --bs-popover-arrow-border:
     */
+}
+
+.custom-popover .quote {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 0.1em;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
 }

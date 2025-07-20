@@ -71,7 +71,7 @@ function displayCharacters(charactersArray) {
             popupContent += `Species: <span class='species'>${character.species}</span><br/>`
         }
         if (Object.hasOwn(character, "quote")) {
-            popupContent += `❝<span class='quote'>${character.quote}❞</span><br/>`
+            popupContent += `❝ <span class='quote'>${character.quote}❞</span><br/>`
         }
         const fullName = Object.hasOwn(character, "fullName") ? character.fullName : character.name;
 
