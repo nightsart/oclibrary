@@ -14,6 +14,7 @@ body {
     background-size: cover;
     position:absolute;
     overflow-x:hidden;
+    background-color: #161616;
 }
 
 .main {
@@ -27,27 +28,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
-    min-width: 400px;
-    padding: 50px;
+    max-width: 95vw;
+    min-width: 50vw;
+    padding: 4vw;
 }
 
 .characterContainer>h1 {
-    font-size: 40px;
+    font-size: 200%;
     color: #fff;
-    text-shadow: #000 1px 1px;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     letter-spacing: 0.4em;
-    min-width: 400px;
+    min-width: 289.28px;
 }
 
 .filters {
     display: flex;
-    gap: 10px;
-    width: 550px;
+    column-gap: 5px;
+    width: 70px;
     justify-content: center;
     flex-wrap: nowrap;
-    padding-bottom: 20px;
+    padding-bottom: 1vh;
     color:transparent
 }
 
@@ -58,25 +58,24 @@ p {
 }
 
 .filters button {
-    font-size: 12px;
-    width: 80px;
+    font-size: 0.70em;
+    width: 70px;
     border-radius: 10px;
     border: none;
     background-color: #00000000;
     background-image: linear-gradient(100deg, #49494956, #ecececd8 170%);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #000;
     transition: background-color 0.3s linear, color 0.3s linear;
     cursor:pointer
 }
 
 .filters button.pressed {
-    font-size: 12px;
-    width: 80px;
+    font-size: 0.70em;
+    width: 70px;
     border-radius: 10px;
     border: none;
     background-color: #00000000;
     background-image: linear-gradient(100deg, #00000000, #726b6bba 170%);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: #fff;
     transition: background-color 0.3s linear, color 0.3s linear;
     cursor:pointer
@@ -84,24 +83,23 @@ p {
 
 .filters input,
 select {
-    font-size: 12px;
-    padding: 10px;
-    max-height: 25px;
-    width: 80px;
+    font-size: 0.70em;
+    padding-left: 10px;
+    max-height: 16.8px;
+    max-width: 70px;
     border-radius: 10px;
     border: none;
     background-color: #726b6b83;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     outline: none;
 }
 
 .characters {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0.521vw;
     justify-content: center;
     color:#ccc;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 0.8;
 }
 
@@ -111,23 +109,22 @@ select {
     border-radius: 10px;
     background-color: #312e2e4d;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .character img {
-    max-width: 75px;
-    max-height: 75px;
-    margin-bottom: 5px;
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 0.5vh;
     border-radius: 5px;
 }
 
 .attribution {
-    text-decoration: none;
     color: #fff;
-    margin-right: -175px;
-    margin-top: -30px;
-    padding-bottom: 15px;
-    font-size:18px;
+    text-decoration: underline;
+    margin-right: -10.5vw;
+    margin-top: -3vh;
+    padding-bottom: 1vw;
+    font-size: 100%;
 }
 
 a:-webkit-any-link {
@@ -173,6 +170,6 @@ a:-webkit-any-link {
     letter-spacing: 0.1em;
     line-height: 0.1em;
     font-weight: 100;
-    font-size: 13px;
+    font-size: 0.813rem;
     text-align: center;
 }
