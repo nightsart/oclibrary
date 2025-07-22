@@ -127,7 +127,7 @@ select {
     font-size: 100%;
 }
 
-a:-webkit-any-link, a:any-link {
+a:any-link {
     color: #fff;
     text-decoration: underline;
     font-family: "Caveat", cursive;
