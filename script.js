@@ -10,7 +10,7 @@ const characters = [
     { imageURL: "images/cara.png",      name: "Cara",       categories: ["Human", "Female", "Night", "Gang"],           fullName: "Omura Cara", pronunciation: "KA-ruh", quote: "Leave me alone." },
     { imageURL: "images/cassie.png",    name: "Cassie",     categories: ["Human", "Female", "Night", "Gang"],           fullName: "Cassandra O'Connor" },
     { imageURL: "images/cherry.png",    name: "Cherry",     categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Cherry Rose </br> ❝Frosted Flame❞", species: "Demon (Dream Eater)", quote: "So hungry..." },
-    { imageURL: "images/daphne.png",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH", "Pin"],            quote: "Miss, you called?" },
+    { imageURL: "images/daphne.png",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH", "Pin"],            fullName: "Daphne †", quote: "Miss, you called?" },
     { imageURL: "images/dj.png",        name: "Dj",         categories: ["Human", "Male", "Dj", "Gang"] },
     { imageURL: "images/dom.png",       name: "Dom",        categories: ["Human", "Male", "Dj", "Cops"],                fullName: "Dominic Fretelli" },
     { imageURL: "images/dorothea.png",  name: "Dorothea",   categories: ["Human", "Female", "Night", "Gang"],           fullName: "Dorothea Leconte" },
