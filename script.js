@@ -39,7 +39,7 @@ const characters = [
     { imageURL: "images/moon.png",      name: "Moon",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Atari Moon", species: "Human, hybrid via shapeshifting", quote: "Do they sell donuts?" },
     { imageURL: "images/naiya.png",     name: "Naiya",      categories: ["Human", "Female", "Night", "Gang", "Pin"],           fullName: "Naiya Sirah", pronunciation: "NA-yah SIGH-rah", quote: "Hmm?" },
     { imageURL: "images/night.png",     name: "Night",      categories: ["NonH", "Female", "Night", "LSH"],             fullName: "Night Wraith (Ito Kimi)", species: "Cursed", quote: "No, no, you're right. I truly don't have to kill you. However, you see, I would very much enjoy sucking the life out of you." },
-    { imageURL: "images/nyx.png",       name: "Nyx",        categories: ["NonH", "Female", "Night", "Gang", "Pin"],            fullName: "Nyx Anthis", species: "Arctic fox hybrid", quote: "How dare you oppose me, your beautiful, humble Goddess?" },
+    { imageURL: "images/nyx.png",       name: "Nyx",        categories: ["NonH", "Female", "Night", "Gang", "Pin"],            fullName: "Nyx Anthis", species: "Fox hybrid", quote: "How dare you oppose me, your beautiful, humble Goddess?" },
     { imageURL: "images/oscar.png",     name: "Oscar",      categories: ["Human", "Male", "Dj", "Others"],              fullName: "Oscar 'Ozzie' Black" },
     { imageURL: "images/pandora.png",   name: "Pandora",    categories: ["Human", "Female", "Night", "envision"],       fullName: "CB071", quote: "Give up." },
     { imageURL: "images/penny.png",     name: "Penny",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Penthesilea Parker", quote: "Nyx, I said not to- Whatever..." },
