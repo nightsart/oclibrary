@@ -2,7 +2,7 @@ const characters = [
     { imageURL: "images/aaron.png",     name: "Aaron",      categories: ["Human", "Male", "Night", "Gang"] },
     { imageURL: "images/alyssa.png",    name: "Alyssa",     categories: ["Human", "Female", "Dj", "Others"] },
     { imageURL: "images/amy.png",       name: "Amy",        categories: ["Human", "Female", "Night", "Gang"],           fullName: "Kawa Amy (Ishikawa Kira)", quote: "Don't get all shy, now~ Tonight has only just begun!" },
-    { imageURL: "images/anko.png",      name: "Anko",       categories: ["Human", "Female", "Night", "Others", "Pin"],},
+    { imageURL: "images/anko.png",      name: "Anko",       categories: ["Human", "Female", "Night", "Others"],},
     { imageURL: "images/ash.png",       name: "Arsonist",   categories: ["Human", "Male", "Dj", "Others"],              fullName: "Ashton 'Ash' Grey" },
     { imageURL: "images/ayumi.png",     name: "Ayumi",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Arai Ayumi †" },
     { imageURL: "images/azure.png",     name: "Azure",      categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Azure Lozanov" },
@@ -26,7 +26,7 @@ const characters = [
     { imageURL: "images/jade.png",      name: "Jade",       categories: ["Human", "Female", "Night", "Others", "Pin"],         fullName: "Jade Quinn", quote: "Sure, how can I help?" },
     { imageURL: "images/kaelani.png",   name: "Kae",        categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Kaelani </br> ❝Bibliophile❞", pronunciation: "kay- or ka-eh-LAH-nee", species: "Vuuna", quote: "But satisfaction brought it back, remember? If you're going to use idioms, use the whole quote." },
     { imageURL: "images/kenzie.png",    name: "Kenzie",     categories: ["Human", "Female", "Night", "Others"],         fullName: "Kenzie 'Zee' Sallie" },
-    { imageURL: "images/kiara.png",     name: "Kiara",      categories: ["NonH", "Female", "LSE", "Pin"],               species: "Vesperis", pronunciation: "kee-AR-uh" },
+    { imageURL: "images/kiara.png",     name: "Kiara",      categories: ["NonH", "Female", "LSE"],                      species: "Vesperis", pronunciation: "kee-AR-uh" },
     { imageURL: "images/kiko.png",      name: "Kiko",       categories: ["Human", "Female", "Night", "Gang", "Others", "Pin"], fullName: "Tsuro Kiko" },
     { imageURL: "images/kishi.png",     name: "Kishi",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Oseki Kishi 'K'", quote: "Sorry, were you talking to me? That's too bad, I don't care." },
     { imageURL: "images/kyra.png",      name: "Kyra",       categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Kawa Kyra (Ishikawa Ami)" },
@@ -36,7 +36,7 @@ const characters = [
     { imageURL: "images/luna.png",      name: "Luna",       categories: ["Human", "Female", "Night", "Others"],         fullName: "Luna Selene", species: "Human, cat hybrid via shapeshifting", quote: "Meow?" },
     { imageURL: "images/lyra.png",      name: "Lyra",       categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Lyra Circe </br> ❝Graceful Sun❞", species: "Velis", pronunciation: "LIE-rah SIR-see", quote: "Don't think about it, dance with your heart! Nobody's watching." },
     { imageURL: "images/melissa.png",   name: "Melissa",    categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Melissa Circe </br> ❝Swift Death❞", species: "Velis", quote: "Running won't save you." },
-    { imageURL: "images/Mei.png",       name: "Mei",        categories: ["Human", "Female", "Night", "Others", "Pin"],},
+    { imageURL: "images/mei.png",       name: "Mei",        categories: ["Human", "Female", "Night", "Others"],},
     { imageURL: "images/mika.png",      name: "Mika",       categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Mika Quartz </br> ❝Rose Quartz❞", species: "Crysta'lynn", quote: "I  think about my family daily. Regardless, I'm glad I'm here with you right now. I think I made the right choice." },
     { imageURL: "images/mist.png",      name: "Mist",       categories: ["NonH", "Male", "Night", "LSH"],               fullName: "Mist Wraith (Kade Robertson)", species: "Cursed", quote: "To the moon and back." },
     { imageURL: "images/moon.png",      name: "Moon",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Atari Moon", species: "Human, hybrid via shapeshifting", quote: "Do they sell donuts?" },
@@ -140,5 +140,6 @@ filterButtons.forEach(button => {
 searchInput.addEventListener('input', () => {
     filterCharacters();
 });
+
 
 displayCharacters(characters);
