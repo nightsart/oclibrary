@@ -25,8 +25,9 @@ const characters = [
     { imageURL: "images/iris.png",      name: "Iris",       categories: ["Human", "Female", "Night", "envision"],       fullName: "CC734 (Kris Kaelin)", quote: "Hun... You’re going to make this way more complicated than it needs to be, aren’t you?" },
     { imageURL: "images/jade.png",      name: "Jade",       categories: ["Human", "Female", "Night", "Others", "Pin"],         fullName: "Jade Quinn", quote: "Sure, how can I help?" },
     { imageURL: "images/kaelani.png",   name: "Kae",        categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Kaelani </br> ❝Bibliophile❞", pronunciation: "kay- or ka-eh-LAH-nee", species: "Vuuna", quote: "But satisfaction brought it back, remember? If you're going to use idioms, use the whole quote." },
+    { imageURL: "images/ken.png",       name: "Ken",        categories: ["Human", "Male", "Night", "Others"],           fullName: "Kenzo", quote: "Memories are so fragile." },
     { imageURL: "images/kenzie.png",    name: "Kenzie",     categories: ["Human", "Female", "Night", "Others"],         fullName: "Kenzie 'Zee' Sallie" },
-    { imageURL: "images/kiara.png",     name: "Kiara",      categories: ["NonH", "Female", "LSE"],                      species: "Vesperis", pronunciation: "kee-AR-uh" },
+    { imageURL: "images/kiara.png",     name: "Kiara",      categories: ["NonH", "Female", "Night", "LSE"],             species: "Vesperis", pronunciation: "kee-AR-uh", quote: "Oh, shut your hole! You worthless, pathetic, whining little rat. Is this how you intended to protect your family? I must be doing them a favor." },
     { imageURL: "images/kiko.png",      name: "Kiko",       categories: ["Human", "Female", "Night", "Gang", "Others", "Pin"], fullName: "Tsuro Kiko" },
     { imageURL: "images/kishi.png",     name: "Kishi",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Oseki Kishi 'K'", quote: "Sorry, were you talking to me? That's too bad, I don't care." },
     { imageURL: "images/kyra.png",      name: "Kyra",       categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Kawa Kyra (Ishikawa Ami)" },
@@ -143,3 +144,4 @@ searchInput.addEventListener('input', () => {
 
 
 displayCharacters(characters);
+
