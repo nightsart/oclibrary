@@ -14,7 +14,7 @@ const characters = [
     { imageURL: "images/daphne.png",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH"],            fullName: "Daphne †", quote: "Miss, you called?" },
     { imageURL: "images/dawn.png",      name: "Dawn",       categories: ["NonH", "Female", "Night", "LSA"],             fullName: "❝Timeless Embrace❞", species: "Angel" },
     { imageURL: "images/dj.png",        name: "Dj",         categories: ["Human", "Male", "Dj", "Gang"],                 },
-    { imageURL: "images/dom.png",       name: "Dom",        categories: ["Human", "Male", "Dj", "Cops"],                fullName: "Dominic Fretelli", rune:"???" },
+    { imageURL: "images/dom.png",       name: "Dom",        categories: ["Human", "Male", "Dj", "Cops", "Pin"],                fullName: "Dominic Fretelli", rune:"???" },
     { imageURL: "images/dorothea.png",  name: "Dorothea",   categories: ["Human", "Female", "Night", "Gang"],           fullName: "Dorothea Leconte", rune:"Subliminal desire" },
     { imageURL: "images/ela.png",       name: "Ela",        categories: ["Human", "Female", "Dj", "Cops"],              fullName: "Elizabeth Grande", rune:"Puppeteer" },
     { imageURL: "images/eleanor.png",   name: "Eleanor",    categories: ["Human", "Female", "Night", "Others"],         fullName: "Eleanor 'Ellie' Black", rune:"Portals" },
@@ -28,7 +28,7 @@ const characters = [
     { imageURL: "images/ken.png",       name: "Ken",        categories: ["Human", "Male", "Night", "Others"],           fullName: "Takeda Kenzo", rune:"Erasure", quote: "Memories are fragile." },
     { imageURL: "images/kenzie.png",    name: "Kenzie",     categories: ["Human", "Female", "Night", "Others"],         fullName: "Kenzie 'Zee' Sallie", rune:"Rewrite" },
     { imageURL: "images/kiara.png",     name: "Kiara",      categories: ["NonH", "Female", "Night", "LSE"],             species: "Vesperis", pronunciation: "kee-AR-uh", quote: "Oh, shut your hole! You worthless, pathetic, whining little rat. Is this how you intended to protect your family? I must be doing them a favor." },
-    { imageURL: "images/kiko.png",      name: "Kiko",       categories: ["Human", "Female", "Night", "Gang", "Others", "Pin"], fullName: "Tsuro Kiko", rune:"Rewind" },
+    { imageURL: "images/kiko.png",      name: "Kiko",       categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Tsuro Kiko", rune:"Rewind" },
     { imageURL: "images/kishi.png",     name: "Kishi",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Oseki Kishi 'K'", rune:"Hypnosis", quote: "Sorry, were you talking to me? That's too bad, I don't care." },
     { imageURL: "images/kyra.png",      name: "Kyra",       categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Kawa Kyra (Ishikawa Ami)", rune:"Sweet dreams" },
     { imageURL: "images/lilou.png",     name: "Lilou",      categories: ["Human", "Female", "Night", "Others"],         rune:"Grafting" },
@@ -47,7 +47,7 @@ const characters = [
     { imageURL: "images/oscar.png",     name: "Oscar",      categories: ["Human", "Male", "Dj", "Others"],              fullName: "Oscar 'Ozzie' Black", rune:"Voodoo doll" },
     { imageURL: "images/pandora.png",   name: "Pandora",    categories: ["Human", "Female", "Night", "envision"],       fullName: "CB071", rune:"Toxicity - Energy steal - Blink", quote: "Give up." },
     { imageURL: "images/penny.png",     name: "Penny",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Penthesilea Parker", rune:"Faster healing", quote: "Nyx, I said not to- Whatever..." },
-    { imageURL: "images/rae.png",       name: "Rae",        categories: ["Human", "Female", "Dj", "Others"],            fullName: "Fukure Rae", rune:"Tsukuyomi" },
+    { imageURL: "images/rae.png",       name: "Rae",        categories: ["Human", "Female", "Dj", "Others", "Pin"],            fullName: "Fukure Rae", rune:"Tsukuyomi" },
     { imageURL: "images/riley.png",     name: "Riley",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Riley Jones", rune:"Ultimate shapeshifting" },
     { imageURL: "images/scarlet.png",   name: "Scarlet",    categories: ["Human", "Female", "Dj", "Cops"],              rune:"Momentum control" },
     { imageURL: "images/shie.png",      name: "Shie",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Kaeshi Shie", pronunciation: "SHE-eh", rune:"Freeze" },
@@ -55,7 +55,7 @@ const characters = [
     { imageURL: "images/spectre.png",   name: "Spectre",    categories: ["Human", "Male", "Dj", "envision"],             },
     { imageURL: "images/tyler.png",     name: "Tyler",      categories: ["Human", "Male", "Night", "Others"],           rune:"None", quote: "Gwen..." },
     { imageURL: "images/vanilla.png",   name: "Vanilla",    categories: ["NonH", "Female", "Night", "Gang", "Others"],  fullName: "Vanilla Wafer or Nilla</br>(Fabularis Ciuem Project Type 4.7)", species: "Android", rune:"None", quote: "What can I help you with, Master?" },
-    { imageURL: "images/winter.png",    name: "Winter",     categories: ["Human", "Female", "Dj", "Others", "Pin"],      },
+    { imageURL: "images/winter.png",    name: "Winter",     categories: ["Human", "Female", "Dj", "Others"],             },
     { imageURL: "images/wendy.png",     name: "Wendy",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Wendy Macie Harmon", rune:"Metal manipulation" },
     { imageURL: "images/redacted.png",  name: "[Redacted]", categories: ["Human", "Male", "Dj", "Others"],              rune:"???" },
 ];
@@ -79,7 +79,7 @@ function displayCharacters(charactersArray) {
             popupContent += `Rune: <span class='rune'>${character.rune}</span><br/>`
         }
         if (Object.hasOwn(character, "ability")) {
-            popupContent += `Ability: <span class='ability'>${character.ability}</span><br/>`
+            popupContent += `Specialty: <span class='ability'>${character.ability}</span><br/>`
         }
         if (Object.hasOwn(character, "quote")) {
             popupContent += `<hr>❝ <span class='quote'>${character.quote}❞</span><br/>`
