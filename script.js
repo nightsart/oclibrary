@@ -39,7 +39,7 @@ const characters = [
     { imageURL: "images/melissa.png",   name: "Melissa",    categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Melissa Circe </br> ❝Swift Death❞", species: "Velis", quote: "Running won't save you." },
     { imageURL: "images/mei.webp",       name: "Mei",        categories: ["Human", "Female", "Night", "Others"],         fullName: "Nakamura Mei", rune:"None" },
     { imageURL: "images/mika.png",      name: "Mika",       categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Mika Quartz </br> ❝Rose Quartz❞", species: "Crysta'lynn", quote: "I  think about my family daily. Regardless, I'm glad I'm here with you right now. I think I made the right choice." },
-    { imageURL: "images/mist.png",      name: "Mist",       categories: ["NonH", "Male", "Night", "LSH"],               fullName: "Mist Wraith (Kade Robertson)", species: "Cursed", ability:"Illustions", quote: "To the moon and back." },
+    { imageURL: "images/mist.webp",      name: "Mist",       categories: ["NonH", "Male", "Night", "LSH"],               fullName: "Mist Wraith (Kade Robertson)", species: "Cursed", ability:"Illustions", quote: "To the moon and back." },
     { imageURL: "images/moon.webp",      name: "Moon",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Atari Moon", species: "Human, hybrid via shapeshifting", rune:"Partial shapeshifting (small mammals only)", quote: "Do they sell donuts?" },
     { imageURL: "images/naiya.webp",     name: "Naiya",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Naiya Sirah", pronunciation: "NA-yah SIGH-rah", rune:"Iron telekinesis", quote: "Hmm?" },
     { imageURL: "images/night.png",     name: "Night",      categories: ["NonH", "Female", "Night", "LSH"],             fullName: "Night Wraith (Ito Kimi)", species: "Cursed", ability:"The world at my fingertips", quote: "No, no, you're right. I truly don't have to kill you. However, you see, I would very much enjoy sucking the life out of you." },
@@ -150,4 +150,5 @@ searchInput.addEventListener('input', () => {
 
 
 displayCharacters(characters);
+
 
