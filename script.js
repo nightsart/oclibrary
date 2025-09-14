@@ -14,7 +14,7 @@ const characters = [
     { imageURL: "images/daphne.webp",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH"],            fullName: "Daphne †", quote: "Miss, you called?" },
     { imageURL: "images/dawn.webp",      name: "Dawn",       categories: ["NonH", "Female", "Night", "LSA"],             fullName: "❝Timeless Embrace❞", species: "Angel" },
     { imageURL: "images/dj.webp",        name: "Dj",         categories: ["Human", "Male", "Dj", "Gang"],                 },
-    { imageURL: "images/dom.png",       name: "Dom",        categories: ["Human", "Male", "Dj", "Cops", "Pin"],                fullName: "Dominic Fretelli", rune:"???" },
+    { imageURL: "images/dom.webp",       name: "Dom",        categories: ["Human", "Male", "Dj", "Cops", "Pin"],                fullName: "Dominic Fretelli", rune:"???" },
     { imageURL: "images/dorothea.webp",  name: "Dorothea",   categories: ["Human", "Female", "Night", "Gang"],           fullName: "Dorothea Leconte", rune:"Subliminal desire" },
     { imageURL: "images/ela.webp",       name: "Ela",        categories: ["Human", "Female", "Dj", "Cops"],              fullName: "Elizabeth Grande", rune:"Puppeteer" },
     { imageURL: "images/eleanor.webp",   name: "Eleanor",    categories: ["Human", "Female", "Night", "Others"],         fullName: "Eleanor 'Ellie' Black", rune:"Portals" },
@@ -34,7 +34,7 @@ const characters = [
     { imageURL: "images/lilou.webp",     name: "Lilou",      categories: ["Human", "Female", "Night", "Others"],         rune:"Grafting" },
     { imageURL: "images/lisy.webp",      name: "Lisy",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Atari Moon", rune:"Blood roses", quote: "Have you lost weight? Oh, nevermind. That dress makes you look nice." },
     { imageURL: "images/liza.webp",      name: "Liza",       categories: ["Human", "Female", "Dj", "envision"],          fullName: "Liza Goff", rune:"Rhythm sync" },
-    { imageURL: "images/luna.png",      name: "Luna",       categories: ["Human", "Female", "Night", "Others"],         fullName: "Luna Selene", species: "Human, cat hybrid via shapeshifting", rune:"Cat", quote: "Meow?" },
+    { imageURL: "images/luna.webp",      name: "Luna",       categories: ["Human", "Female", "Night", "Others"],         fullName: "Luna Selene", species: "Human, cat hybrid via shapeshifting", rune:"Cat", quote: "Meow?" },
     { imageURL: "images/lyra.png",      name: "Lyra",       categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Lyra Circe </br> ❝Graceful Sun❞", species: "Velis", pronunciation: "LIE-rah SIR-see", quote: "Don't think about it, dance with your heart! Nobody's watching." },
     { imageURL: "images/melissa.png",   name: "Melissa",    categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Melissa Circe </br> ❝Swift Death❞", species: "Velis", quote: "Running won't save you." },
     { imageURL: "images/mei.webp",       name: "Mei",        categories: ["Human", "Female", "Night", "Others"],         fullName: "Nakamura Mei", rune:"None" },
@@ -47,7 +47,7 @@ const characters = [
     { imageURL: "images/oscar.png",     name: "Oscar",      categories: ["Human", "Male", "Dj", "Others"],              fullName: "Oscar 'Ozzie' Black", rune:"Voodoo doll" },
     { imageURL: "images/pandora.webp",   name: "Pandora",    categories: ["Human", "Female", "Night", "envision"],       fullName: "CB071", rune:"Toxicity - Energy steal - Blink", quote: "Give up." },
     { imageURL: "images/penny.webp",     name: "Penny",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Penthesilea Parker", rune:"Faster healing", quote: "Nyx, I said not to- Whatever..." },
-    { imageURL: "images/rae.png",       name: "Rae",        categories: ["Human", "Female", "Dj", "Others", "Pin"],            fullName: "Fukure Rae", rune:"Tsukuyomi" },
+    { imageURL: "images/rae.webp",       name: "Rae",        categories: ["Human", "Female", "Dj", "Others", "Pin"],            fullName: "Fukure Rae", rune:"Tsukuyomi" },
     { imageURL: "images/riley.png",     name: "Riley",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Riley Jones", rune:"Ultimate shapeshifting" },
     { imageURL: "images/scarlet.webp",   name: "Scarlet",    categories: ["Human", "Female", "Dj", "Cops"],              rune:"Momentum control" },
     { imageURL: "images/shie.png",      name: "Shie",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Kaeshi Shie", pronunciation: "SHE-eh", rune:"Freeze" },
@@ -55,7 +55,7 @@ const characters = [
     { imageURL: "images/spectre.webp",   name: "Spectre",    categories: ["Human", "Male", "Dj", "envision"],             },
     { imageURL: "images/tyler.png",     name: "Tyler",      categories: ["Human", "Male", "Night", "Others"],           rune:"None", quote: "Gwen..." },
     { imageURL: "images/vanilla.webp",   name: "Vanilla",    categories: ["NonH", "Female", "Night", "Gang", "Others"],  fullName: "Vanilla Wafer or Nilla</br>(Fabularis Ciuem Project Type 4.7)", species: "Android", rune:"None", quote: "What can I help you with, Master?" },
-    { imageURL: "images/wendy.png",     name: "Wendy",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Wendy Macie Harmon", rune:"Metal manipulation" },
+    { imageURL: "images/wendy.webp",     name: "Wendy",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Wendy Macie Harmon", rune:"Metal manipulation" },
     { imageURL: "images/winter.webp",    name: "Winter",     categories: ["Human", "Female", "Dj", "Others"],             },
     { imageURL: "images/redacted.webp",  name: "[Redacted]", categories: ["Human", "Male", "Dj", "Others"],              rune:"???" },
 ];
@@ -150,5 +150,4 @@ searchInput.addEventListener('input', () => {
 
 
 displayCharacters(characters);
-
 
