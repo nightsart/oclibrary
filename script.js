@@ -9,7 +9,7 @@ const characters = [
     { imageURL: "images/gabriel.webp",   name: "Birdeye",    categories: ["Human", "Male", "Dj", "Others"],              fullName: "Gabriel Osmin", rune:"None" },
     { imageURL: "images/boss.webp",      name: "Boss",       categories: ["Human", "Male", "Dj", "Gang"],                 },
     { imageURL: "images/cara.webp",      name: "Cara",       categories: ["Human", "Female", "Night", "Gang"],           fullName: "Omura Cara", pronunciation: "KA-ruh", rune:"Metamorphosis", quote: "Leave me alone." },
-    { imageURL: "images/cassie.png",    name: "Cassie",     categories: ["Human", "Female", "Night", "Gang", "Pin"],            fullName: "Cassandra O'Connor", rune:"Tricks & Mirrors" },
+    { imageURL: "images/cassie.webp",    name: "Cassie",     categories: ["Human", "Female", "Night", "Gang"],           fullName: "Cassandra O'Connor", rune:"Tricks & Mirrors" },
     { imageURL: "images/cherry.png",    name: "Cherry",     categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Cherry Rose </br> ❝Frosted Flame❞", species: "Demon (Dream Eater)", ability:"Soporific flames", quote: "So hungry..." },
     { imageURL: "images/daphne.webp",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH"],            fullName: "Daphne †", quote: "Miss, you called?" },
     { imageURL: "images/dawn.webp",      name: "Dawn",       categories: ["NonH", "Female", "Night", "LSA"],             fullName: "❝Timeless Embrace❞", species: "Angel" },
