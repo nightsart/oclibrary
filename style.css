@@ -139,6 +139,8 @@ a:any-link {
     --bs-popover-header-color: #fff;
     --bs-popover-header-bg: #312e2e;
     --bs-popover-bg: #312e2e;
+    min-width: 276px;
+
     
 
     /* List of supported variables:
@@ -172,4 +174,20 @@ a:any-link {
     font-weight: 100;
     font-size: 0.813rem;
     text-align: center;
+}
+
+.custom-popover .runeImage {
+    max-width: 60px;
+    max-height: 60px;
+    position:absolute;
+    right:15px;
+    top:5px;
+} 
+
+.custom-popover span {
+    margin: right 40px;
+}
+
+.custom-popover .popover-body {
+    position: relative;
 }
