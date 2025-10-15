@@ -24,7 +24,7 @@ const characters = [
     { imageURL: "images/gwen.webp",      name: "Gwen",       categories: ["Human", "Female", "Night", "Gang"],           fullName: "Gwendolyn Heartstill", rune:"Toxic empathy", quote: "Huh? What does that mean? Stop using big words with me!", runeURL:"images/gwen_rune.webp", },
     { imageURL: "images/iris.webp",      name: "Iris",       categories: ["Human", "Female", "Night", "envision"],       fullName: "CC734 (Kris Kaelin)", rune:"Tentacles - Thermal eye - Incorporeal", quote: "Hun... You’re going to make this way more complicated than it needs to be, aren’t you?" },
     { imageURL: "images/jade.webp",      name: "Jade",       categories: ["Human", "Female", "Night", "Others"],         fullName: "Jade Quinn", rune:"Crystalline resonance", quote: "Sure, how can I help?" },
-    { imageURL: "images/kaelani.webp",   name: "Kae",        categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Kaelani</br>❝Bibliophile❞", pronunciation: "kay- or ka-eh-LAH-nee", species: "Vuuna", ability:"Innate dark mage", quote: "But satisfaction brought it back, remember? If you're going to use idioms, use the whole quote.", },
+    { imageURL: "images/kaelani.webp",   name: "Kae",        categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Kaelani</br>❝Bibliophile❞", pronunciation: "kay- or ka-eh-LAH-nee", species: "Vuuna", ability:"Shadows", quote: "But satisfaction brought it back, remember? If you're going to use idioms, use the whole quote.", },
     { imageURL: "images/ken.webp",       name: "Ken",        categories: ["Human", "Male", "Night", "Others"],           fullName: "Takeda Kenzo", rune:"Erasure", quote: "Memories are fragile." },
     { imageURL: "images/kenzie.webp",    name: "Kenzie",     categories: ["Human", "Female", "Night", "Others"],         fullName: "Kenzie 'Zee' Sallie", rune:"Rewrite" },
     { imageURL: "images/kiara.webp",     name: "Kiara",      categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Kiara</br>❝The Ruthless❞", species: "Vesperis", pronunciation: "kee-AR-uh", quote: "Oh, shut your hole! You worthless, pathetic, whining little rat. Is this how you intended to protect your family? I must be doing them a favor." },
@@ -70,7 +70,7 @@ function displayCharacters(charactersArray) {
     charactersArray.forEach(character => {
         let popupContent = "";
         if (Object.hasOwn(character, "pronunciation")) {
-            popupContent += `Pronunciation: <span class='pronunciation'>${character.pronunciation}</span><br/>`;
+            popupContent += `🔉 <span class='pronunciation'>${character.pronunciation}</span><br/>`;
         }
         if (Object.hasOwn(character, "species")) {
             popupContent += `Species: <span class='species'>${character.species}</span><br/>`

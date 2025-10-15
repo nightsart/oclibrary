@@ -184,8 +184,9 @@ a:any-link {
     top:5px;
 } 
 
-.custom-popover span {
-    margin: right 40px;
+.custom-popover span.rune {
+    display: inline-block;
+    margin-right: 70px;
 }
 
 .custom-popover .popover-body {
