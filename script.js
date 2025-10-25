@@ -34,7 +34,7 @@ const characters = [
     { imageURL: "images/lilou.webp",     name: "Lilou",      categories: ["Human", "Female", "Night", "Others"],         rune:"Grafting" },
     { imageURL: "images/lisy.webp",      name: "Lisy",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Atari Moon", rune:"Blood roses", quote: "Have you lost weight? Oh, nevermind. That dress makes you look nice." },
     { imageURL: "images/liza.webp",      name: "Liza",       categories: ["Human", "Female", "Dj", "envision", "Pin"],          fullName: "Liza Goff", rune:"Rhythm sync" },
-    { imageURL: "images/luna.webp",      name: "Luna",       categories: ["Human", "Female", "Night", "Others"],         fullName: "Luna Selene", species: "Human, cat hybrid via shapeshifting", rune:"Cat", quote: "Meow?" },
+    { imageURL: "images/luna.webp",      name: "Luna",       categories: ["Human", "NonH", "Female", "Night", "Others"], fullName: "Luna Selene", species: "Human, cat hybrid via shapeshifting", rune:"Cat", quote: "Meow?" },
     { imageURL: "images/lyra.webp",      name: "Lyra",       categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Lyra Circe</br>❝Graceful Sun❞", species: "Velis", pronunciation: "LIE-rah SIR-see", quote: "Don't think about it, dance with your heart! Nobody's watching." },
     { imageURL: "images/melissa.webp",   name: "Melissa",    categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Melissa Circe</br>❝Swift Death❞", species: "Velis", quote: "Running won't save you." },
     { imageURL: "images/mei.webp",       name: "Mei",        categories: ["Human", "Female", "Night", "Others"],         fullName: "Nakamura Mei", rune:"None" },
@@ -64,6 +64,7 @@ const characters = [
 const charactersContainer = document.querySelector('.characters');
 const searchInput = document.getElementById('searchCharacter');
 const filterButtons = document.querySelectorAll('.filters button');
+const sidebarThreshold = 962;
 
 function displayCharacters(charactersArray) {
     charactersContainer.innerHTML = "";
@@ -133,6 +134,36 @@ function initializePopovers() {
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 }
 
+function w3_open() {
+    var sidebar = document.getElementById("mySidebar");
+    sidebar.dataset.openedAt = window.innerWidth;
+    sidebar.dataset.closedAt = -1;
+    sidebar.classList.remove("fade-out");
+    sidebar.classList.add("fade-in");
+}
+
+function w3_close() {
+    var sidebar = document.getElementById("mySidebar");
+    sidebar.dataset.closedAt = window.innerWidth;
+    sidebar.dataset.openedAt = -1;
+    sidebar.classList.remove("fade-in");
+    sidebar.classList.add("fade-out");
+}
+
+function check_sidebar_resize() {
+    var sidebar = document.getElementById("mySidebar");
+    var isVisible = document.getElementById("mySidebar").checkVisibility({
+        visibilityProperty: true,
+    });
+    var closedAt = Number(sidebar.dataset.closedAt);
+    var openedAt = Number(sidebar.dataset.openedAt);
+    if (window.innerWidth < sidebarThreshold && isVisible && openedAt >= sidebarThreshold) {
+        w3_close();
+    } else if (window.innerWidth >= sidebarThreshold && !isVisible && closedAt < sidebarThreshold) {
+        w3_open();
+    }
+}
+
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         button.classList.toggle('pressed');
@@ -152,6 +183,20 @@ filterButtons.forEach(button => {
             document.querySelectorAll('.filters button.pressed[data-story="Runes"]').forEach(button => button.classList.remove('pressed'));
         }
 
+        if (button.dataset.owner == "Nights") {
+            document.querySelectorAll('.filters button.pressed[data-owner="Djs"]').forEach(button => button.classList.remove('pressed'));
+        }
+        if (button.dataset.owner == "Djs") {
+            document.querySelectorAll('.filters button.pressed[data-owner="Nights"]').forEach(button => button.classList.remove('pressed'));
+        }
+
+        if (button.dataset.gender == "Female") {
+            document.querySelectorAll('.filters button.pressed[data-gender="Male"]').forEach(button => button.classList.remove('pressed'));
+        }
+        if (button.dataset.gender == "Male") {
+            document.querySelectorAll('.filters button.pressed[data-gender="Female"]').forEach(button => button.classList.remove('pressed'));
+        }
+
         filterCharacters();
     });
 });
@@ -163,3 +208,5 @@ searchInput.addEventListener('input', () => {
 
 displayCharacters(characters);
 
+window.addEventListener('resize', check_sidebar_resize);
+check_sidebar_resize();
