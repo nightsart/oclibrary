@@ -8,7 +8,7 @@ const characters = [
     { imageURL: "images/azure.webp",     name: "Azure",      categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Azure Lozanov", rune:"Thread creation" },
     { imageURL: "images/gabriel.webp",   name: "Birdeye",    categories: ["Human", "Male", "Dj", "Others"],              fullName: "Gabriel Osmin", rune:"None" },
     { imageURL: "images/boss.webp",      name: "Boss",       categories: ["Human", "Male", "Dj", "Gang"],                 },
-    { imageURL: "images/cara.webp",      name: "Cara",       categories: ["Human", "Female", "Night", "Gang"],           fullName: "Omura Cara", pronunciation: "KA-ruh", rune:"Metamorphosis", quote: "Leave me alone.", runeURL:"images/cara_rune.webp", },
+    { imageURL: "images/cara.webp",      name: "Cara",       categories: ["Human", "Female", "Night", "Gang"],           fullName: "Omura Cara", pronunciation: "KA-ruh", rune:"Animal shifting", quote: "Leave me alone.", runeURL:"images/cara_rune.webp", },
     { imageURL: "images/cassie.webp",    name: "Cassie",     categories: ["Human", "Female", "Night", "Gang"],           fullName: "Cassandra O'Connor", rune:"Tricks & Mirrors" },
     { imageURL: "images/cherry.webp",    name: "Cherry",     categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Cherry Rose</br>❝Frosted Flame❞", species: "Demon (Dream Eater)", ability:"Soporific flames", quote: "So hungry..." },
     { imageURL: "images/daphne.webp",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH", "Pin"],            fullName: "Daphne †", quote: "Miss, you called?" },
@@ -210,3 +210,299 @@ displayCharacters(characters);
 
 window.addEventListener('resize', check_sidebar_resize);
 check_sidebar_resize();
+
+
+// stories.html specific code below
+// escape HTML to safely render .txt content inside innerHTML
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+// Function to load content based on a "page" identifier
+async function loadContent(page) {
+    const container = document.getElementById('content-container');
+    if (!container) {
+        console.warn('loadContent: #content-container not found');
+        return;
+    }
+    let content = '';
+
+    // In a real application, you would fetch content from a server or API.
+    // Here we use a simple switch statement.
+    switch (page) {
+        case 'cheater':
+            try {
+                const res = await fetch('stories/cheater.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Cheater</h2>
+                    <div class="character-images">
+                        <img src="images/amy.webp" alt="Amy" class="character-image" title="Amy">
+                        <img src="images/kyra.webp" alt="Kyra" class="character-image" title="Kyra">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load cheater.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'nmAmy':
+            try {
+                const res = await fetch('stories/nm amy.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Nightmare:</br>Amy</h2>
+                    <div class="character-images">
+                        <img src="images/amy.webp" alt="Amy" class="character-image" title="Amy">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load nm amy.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'gone':
+            try {
+                const res = await fetch('stories/gone.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Gone</h2>
+                    <div class="character-images">
+                        <img src="images/nyx.webp" alt="Nyx" class="character-image" title="Nyx">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load gone.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'gun':
+            // Load the plain text story from the stories folder and display it
+            try {
+                const res = await fetch('stories/gun.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                // Wrap in a <pre> to preserve formatting and escape HTML to avoid injection
+                content = `<div class="header-container">
+                    <h2>Gun</h2>
+                    <div class="character-images">
+                        <img src="images/amy.webp" alt="Amy" class="character-image" title="Amy">
+                        <img src="images/kyra.webp" alt="Kyra" class="character-image" title="Kyra">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load gun.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'mistakes':
+            // Load the plain text story from the stories folder and display it
+            try {
+                const res = await fetch('stories/mistakes.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                // Wrap in a <pre> to preserve formatting and escape HTML to avoid injection
+                content = `<div class="header-container">
+                    <h2>Mistakes</h2>
+                    <div class="character-images">
+                        <img src="images/amy.webp" alt="Amy" class="character-image" title="Amy">
+                        <img src="images/cara.webp" alt="Cara" class="character-image" title="Cara">
+                        <img src="images/aaron.webp" alt="Aaron" class="character-image" title="Aaron">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load mistakes.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'food':
+            try {
+                const res = await fetch('stories/food.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Food</h2>
+                    <div class="character-images">
+                        <img src="images/naiya.webp" alt="Naiya" class="character-image" title="Naiya">
+                        <img src="images/penny.webp" alt="Penny" class="character-image" title="Penny">
+                        <img src="images/amy.webp" alt="Amy" class="character-image" title="Amy">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load food.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'cry':
+            try {
+                const res = await fetch('stories/cry.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Cry</h2>
+                    <div class="character-images">
+                        <img src="images/ember.webp" alt="Ember" class="character-image" title="Ember">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load cry.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'end':
+            try {
+                const res = await fetch('stories/end.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>End</h2>
+                    <div class="character-images">
+                        <img src="images/gwen.webp" alt="Gwen" class="character-image" title="Gwen">
+                        <img src="images/kishi.webp" alt="Kishi" class="character-image" title="Kishi">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load end.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'herDay':
+            try {
+                const res = await fetch('stories/her day.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Her Day</h2>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load her day.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'evening':
+            try {
+                const res = await fetch('stories/evening.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Evening</h2>
+                    <div class="character-images">
+                        <img src="images/fc25.webp" alt="FC25" class="character-image" title="FC25">
+                        <img src="images/gwen.webp" alt="Gwen" class="character-image" title="Gwen">
+                        <img src="images/tyler.webp" alt="Tyler" class="character-image" title="Tyler">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load evening.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'aftermath':
+            try {
+                const res = await fetch('stories/aftermath.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Aftermath</h2>
+                    <div class="character-images">
+                        <img src="images/fc25.webp" alt="FC25" class="character-image" title="FC25">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load aftermath.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'alone':
+            try {
+                const res = await fetch('stories/alone.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>✦ alone</h2>
+                    <div class="character-images">
+                        <img src="images/night.webp" alt="Night" class="character-image" title="Night">
+                        <img src="images/mist.webp" alt="Mist" class="character-image" title="Mist">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load alone.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'eyes':
+            try {
+                const res = await fetch('stories/eyes.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>✦ eyes</h2>
+                    <div class="character-images">
+                        <img src="images/mist.webp" alt="Mist" class="character-image" title="Mist">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load eyes.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'pulse':
+            // Load the plain text story from the stories folder and display it
+            try {
+                const res = await fetch('stories/pulse.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                // Wrap in a <pre> to preserve formatting and escape HTML to avoid injection
+                content = `<div class="header-container">
+                    <h2>✿ pulse</h2>
+                    <img src="images/kiara.webp" alt="Kiara" class="character-image" title="Kiara">
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load gun.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'nmStuck':
+            try {
+                const res = await fetch('stories/nm stuck.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Nightmare:</br>Stuck</h2>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load nm stuck.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'nmNap':
+            try {
+                const res = await fetch('stories/nm nap.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Nightmare:</br>Nap</h2>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load nm nap.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        default:
+            content = '<h2>404 Not Found</h2>';
+    }
+
+    container.innerHTML = content;
+}
+
+// Load the initial content when the page first loads
+document.addEventListener('DOMContentLoaded', () => {
+    loadContent('home');
+});

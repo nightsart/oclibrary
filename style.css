@@ -80,6 +80,7 @@ p {
     color: #000;
     transition: background-color 0.3s linear, color 0.3s linear;
     cursor:pointer;
+    margin-top: 2vw;
     margin-bottom: 2vw;
 }
 
@@ -278,5 +279,9 @@ select {
 }
 
 .custom-popover .popover-body {
+    position: relative;
+}
+
+.dropdown {
     position: relative;
 }
