@@ -1,7 +1,7 @@
 const characters = [
     { imageURL: "images/aaron.webp",     name: "Aaron",      categories: ["Human", "Male", "Night", "Gang"],             rune:"Shadows Manipulation", },
     { imageURL: "images/alyssa.webp",    name: "Alyssa",     categories: ["Human", "Female", "Dj", "Others"],            rune:"None" },
-    { imageURL: "images/amy.webp",       name: "Amy",        categories: ["Human", "Female", "Night", "Gang"],           fullName: "Kawa Amy (Ishikawa Kira)", rune:"Nightmare", quote: "Don't get all shy, now~ Tonight has only just begun!" },
+    { imageURL: "images/amy.webp",       name: "Amy",        categories: ["Human", "Female", "Night", "Gang"],           fullName: "Kawa Amy (Ishikawa Kira)", rune:"Nightmare", quote: "Don't get all shy, now~ Tonight has only just begun!", runeURL:"images/amy_rune.webp", },
     { imageURL: "images/anko.webp",      name: "Anko",       categories: ["Human", "Female", "Night", "Others"],         fullName: "Kamei Anko", rune:"None", },
     { imageURL: "images/ash.webp",       name: "Arsonist",   categories: ["Human", "Male", "Dj", "envision", "Others"],  fullName: "Ashton 'Ash' Grey", rune:"Bonds" },
     { imageURL: "images/ayumi.webp",     name: "Ayumi",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Arai Ayumi †", rune:"Organic sight" },
@@ -30,7 +30,7 @@ const characters = [
     { imageURL: "images/kiara.webp",     name: "Kiara",      categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Kiara</br>❝The Ruthless❞", species: "Vesperis", pronunciation: "kee-AR-uh", quote: "Oh, shut your hole! You worthless, pathetic, whining little rat. Is this how you intended to protect your family? I must be doing them a favor." },
     { imageURL: "images/kiko.webp",      name: "Kiko",       categories: ["Human", "Female", "Night", "Gang", "Others", "Pin"], fullName: "Tsuro Kiko", rune:"Rewind" },
     { imageURL: "images/kishi.webp",     name: "Kishi",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Oseki Kishi 'K'", rune:"Hypnosis", quote: "Sorry, were you talking to me? That's too bad, I don't care." },
-    { imageURL: "images/kyra.webp",      name: "Kyra",       categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Kyra Lozanov</br>(Kawa Kyra/Ishikawa Ami)", rune:"Sweet dreams" },
+    { imageURL: "images/kyra.webp",      name: "Kyra",       categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Kyra Lozanov</br>(Kawa Kyra/Ishikawa Ami)", rune:"Sweet dreams", runeURL:"images/kyra_rune.webp", },
     { imageURL: "images/lilou.webp",     name: "Lilou",      categories: ["Human", "Female", "Night", "Others"],         rune:"Grafting" },
     { imageURL: "images/lisy.webp",      name: "Lisy",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Atari Moon", rune:"Blood roses", quote: "Have you lost weight? Oh, nevermind. That dress makes you look nice." },
     { imageURL: "images/liza.webp",      name: "Liza",       categories: ["Human", "Female", "Dj", "envision", "Pin"],          fullName: "Liza Goff", rune:"Rhythm sync" },
