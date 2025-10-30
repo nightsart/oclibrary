@@ -1,5 +1,5 @@
 const characters = [
-    { imageURL: "images/aaron.webp",     name: "Aaron",      categories: ["Human", "Male", "Night", "Gang"],             rune:"Shadows Manipulation", },
+    { imageURL: "images/aaron.webp",     name: "Aaron",      categories: ["Human", "Male", "Night", "Gang"],             rune:"Shadows Manipulation", quote: "You're perfect the way you are.", },
     { imageURL: "images/alyssa.webp",    name: "Alyssa",     categories: ["Human", "Female", "Dj", "Others"],            rune:"None" },
     { imageURL: "images/amy.webp",       name: "Amy",        categories: ["Human", "Female", "Night", "Gang"],           fullName: "Kawa Amy (Ishikawa Kira)", rune:"Nightmare", quote: "Don't get all shy, now~ Tonight has only just begun!", runeURL:"images/amy_rune.webp", },
     { imageURL: "images/anko.webp",      name: "Anko",       categories: ["Human", "Female", "Night", "Others"],         fullName: "Kamei Anko", rune:"None", },
@@ -8,7 +8,7 @@ const characters = [
     { imageURL: "images/azure.webp",     name: "Azure",      categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Azure Lozanov", rune:"Thread creation" },
     { imageURL: "images/gabriel.webp",   name: "Birdeye",    categories: ["Human", "Male", "Dj", "Others"],              fullName: "Gabriel Osmin", rune:"None" },
     { imageURL: "images/boss.webp",      name: "Boss",       categories: ["Human", "Male", "Dj", "Gang"],                 },
-    { imageURL: "images/cara.webp",      name: "Cara",       categories: ["Human", "Female", "Night", "Gang"],           fullName: "Omura Cara", pronunciation: "KA-ruh", rune:"Animal shifting", quote: "Leave me alone.", runeURL:"images/cara_rune.webp", },
+    { imageURL: "images/cara.webp",      name: "Cara",       categories: ["Human", "Female", "Night", "Gang"],           fullName: "Omura Cara", pronunciation: "KA-ruh", rune:"Animal shifting", quote: "I know he's still out there, somewhere, I simply haven’t found him yet.", runeURL:"images/cara_rune.webp", },
     { imageURL: "images/cassie.webp",    name: "Cassie",     categories: ["Human", "Female", "Night", "Gang"],           fullName: "Cassandra O'Connor", rune:"Tricks & Mirrors" },
     { imageURL: "images/cherry.webp",    name: "Cherry",     categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Cherry Rose</br>❝Frosted Flame❞", species: "Demon (Dream Eater)", ability:"Soporific flames", quote: "So hungry..." },
     { imageURL: "images/daphne.webp",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH", "Pin"],            fullName: "Daphne †", quote: "Miss, you called?" },
