@@ -56,7 +56,7 @@ const characters = [
     { imageURL: "images/summer.webp",    name: "Summer",     categories: ["Human", "Female", "Night", "LSH"],            fullName: "Summer", quote: "Me? Nah, there's no way I'd be the final girl. More like the one who dies in the prologue." },
     { imageURL: "images/tyler.webp",     name: "Tyler",      categories: ["Human", "Male", "Night", "Others"],           rune:"None", quote: "Gwen..." },
     { imageURL: "images/vanilla.webp",   name: "Vanilla",    categories: ["NonH", "Female", "Night", "Gang", "Others"],  fullName: "Vanilla Wafer or Nilla</br>(Fabularis Ciuem</br>Branch 4 Version 7)", species: "Android", rune:"None", quote: "What can I help you with, Master?" },
-    { imageURL: "images/wendy.webp",     name: "Wendy",      categories: ["Human", "Female", "Night", "Others", "Pin"],         fullName: "Wendy Macie Harmon", rune:"Metal manipulation" },
+    { imageURL: "images/wendy.webp",     name: "Wendy",      categories: ["Human", "Female", "Night", "Others",],         fullName: "Wendy Macie Harmon", rune:"Metal manipulation" },
     { imageURL: "images/winter.webp",    name: "Winter",     categories: ["Human", "Female", "Dj", "Others"],             },
     { imageURL: "images/redacted.webp",  name: "[Redacted]", categories: ["Human", "Male", "Dj", "Others"],              rune:"???" },
 ];
