@@ -13,7 +13,7 @@ const characters = [
     { imageURL: "images/cherry.webp",    name: "Cherry",     categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Cherry Rose</br>❝Frosted Flame❞", species: "Demon (Dream Eater)", ability:"Soporific flames", quote: "So hungry..." },
     { imageURL: "images/daphne.webp",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH", "Pin"],            fullName: "Daphne †", quote: "Miss, you called?" },
     { imageURL: "images/dawn.webp",      name: "Dawn",       categories: ["NonH", "Female", "Night", "LSA"],             fullName: "❝Timeless Embrace❞", species: "Angel" },
-    { imageURL: "images/dj.webp",        name: "Dj",         categories: ["Human", "Male", "Dj", "Gang"],                 },
+    { imageURL: "images/dj.webp",        name: "DJ",         categories: ["Human", "Male", "Dj", "Gang"],                 },
     { imageURL: "images/dom.webp",       name: "Dom",        categories: ["Human", "Male", "Dj", "Cops", "Pin"],                fullName: "Dominic Fretelli", rune:"???" },
     { imageURL: "images/dorothea.webp",  name: "Dorothea",   categories: ["Human", "Female", "Night", "Gang"],           fullName: "Dorothea Leconte", rune:"Subliminal desire" },
     { imageURL: "images/ela.webp",       name: "Ela",        categories: ["Human", "Female", "Dj", "Cops"],              fullName: "Elizabeth Grande", rune:"Puppeteer" },
