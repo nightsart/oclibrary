@@ -33,7 +33,7 @@ const characters = [
     { imageURL: "images/kyra.webp",      name: "Kyra",       categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "Kyra Lozanov</br>(Kawa Kyra/Ishikawa Ami)", rune:"Sweet dreams", runeURL:"images/kyra_rune.webp", },
     { imageURL: "images/lilou.webp",     name: "Lilou",      categories: ["Human", "Female", "Night", "Others"],         rune:"Grafting" },
     { imageURL: "images/lisy.webp",      name: "Lisy",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Atari Moon", rune:"Blood roses", quote: "Have you lost weight? Oh, nevermind. That dress makes you look nice." },
-    { imageURL: "images/liza.webp",      name: "Liza",       categories: ["Human", "Female", "Dj", "envision", "Pin"],          fullName: "Liza Goff", rune:"Rhythm sync" },
+    { imageURL: "images/liza.webp",      name: "Liza",       categories: ["Human", "Female", "Dj", "envision"],          fullName: "Liza Goff", rune:"Rhythm sync" },
     { imageURL: "images/luna.webp",      name: "Luna",       categories: ["Human", "NonH", "Female", "Night", "Others"], fullName: "Luna Selene", species: "Human, cat hybrid via shapeshifting", rune:"Cat", quote: "Meow?" },
     { imageURL: "images/lyra.webp",      name: "Lyra",       categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Lyra Circe</br>❝Graceful Sun❞", species: "Velis", pronunciation: "LIE-rah SIR-see", quote: "Don't think about it, dance with your heart! Nobody's watching." },
     { imageURL: "images/melissa.webp",   name: "Melissa",    categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Melissa Circe</br>❝Swift Death❞", species: "Velis", quote: "Running won't save you." },
