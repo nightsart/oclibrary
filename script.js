@@ -19,6 +19,7 @@ const characters = [
     { imageURL: "images/ela.webp",       name: "Ela",        categories: ["Human", "Female", "Dj", "Cops"],              fullName: "Elizabeth Grande", rune:"Puppeteer" },
     { imageURL: "images/eleanor.webp",   name: "Eleanor",    categories: ["Human", "Female", "Night", "Others"],         fullName: "Eleanor 'Ellie' Black", rune:"Portals" },
     { imageURL: "images/ember.webp",     name: "Ember",      categories: ["Human", "Female", "Night", "Cops", "Others"], fullName: "Ember Evans", rune:"Knot", quote: "Why do all this for me?", runeURL:"images/ember_rune.webp", },
+    { imageURL: "images/evan.webp",      name: "Evan",       categories: ["NonH", "Male", "Night", "LSA"],             	 fullName: "❝Enchained Stalker❞", species: "Angel" },
     { imageURL: "images/fc25.webp",      name: "FC25",       categories: ["Human", "Female", "Night", "Gang", "Others"], fullName: "FC or Ci</br>(Fabularis Ciuem</br>Version 25)", pronunciation: "'Ci': KEY", rune:"Tracking", quote: "Why are you so delicious?", runeURL:"images/fc25_rune.webp", },
     { imageURL: "images/fukure.webp",    name: "Fukure",     categories: ["Human", "Male", "Dj", "Cops"],                fullName: "Fukure Isayac", rune:"Memory manipulation" },
     { imageURL: "images/gwen.webp",      name: "Gwen",       categories: ["Human", "Female", "Night", "Gang"],           fullName: "Gwendolyn Heartstill", rune:"Toxic empathy", quote: "Huh? What does that mean? Stop using big words with me!", runeURL:"images/gwen_rune.webp", },
