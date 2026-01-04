@@ -14,7 +14,7 @@ const characters = [
     { imageURL: "images/daphne.webp",    name: "Daphne",     categories: ["Human", "Female", "Night", "LSH"],            fullName: "Daphne †", quote: "Miss, you called?" },
     { imageURL: "images/dawn.webp",      name: "Dawn",       categories: ["NonH", "Female", "Night", "LSA"],             fullName: "❝Timeless Embrace❞", species: "Angel of Crystal (arctic fox hybrid)" },
     { imageURL: "images/dj.webp",        name: "DJ",         categories: ["Human", "Male", "Dj", "Gang"],                 },
-    { imageURL: "images/dom.webp",       name: "Dom",        categories: ["Human", "Male", "Dj", "Cops", "Pin"],                fullName: "Dominic Fretelli", rune:"???" },
+    { imageURL: "images/dom.webp",       name: "Dom",        categories: ["Human", "Male", "Dj", "Cops"],                fullName: "Dominic Fretelli", rune:"???" },
     { imageURL: "images/dorothea.webp",  name: "Dorothea",   categories: ["Human", "Female", "Night", "Gang"],           fullName: "Dorothea Leconte", rune:"Subliminal desire" },
     { imageURL: "images/ela.webp",       name: "Ela",        categories: ["Human", "Female", "Dj", "Cops"],              fullName: "Elizabeth Grande", rune:"Puppeteer" },
     { imageURL: "images/eleanor.webp",   name: "Eleanor",    categories: ["Human", "Female", "Night", "Others"],         fullName: "Eleanor 'Ellie' Black", rune:"Portals" },
