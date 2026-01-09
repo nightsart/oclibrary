@@ -421,6 +421,40 @@ async function loadContent(page) {
                 content = `<h2>Error</h2><p>Could not load aftermath.txt: ${escapeHtml(err.message)}</p>`;
             }
             break;
+        case 'live':
+            try {
+                const res = await fetch('stories/live.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Live</h2>
+                    <div class="character-images">
+                        <img src="images/lisy.webp" alt="Lisy" class="character-image" title="Lisy">
+                        <img src="images/moon.webp" alt="Moon" class="character-image" title="Moon">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load live.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
+        case 'control':
+            try {
+                const res = await fetch('stories/control.txt');
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+                const text = await res.text();
+                content = `<div class="header-container">
+                    <h2>Control</h2>
+                    <div class="character-images">
+                        <img src="images/lisy.webp" alt="Lisy" class="character-image" title="Lisy">
+                        <img src="images/moon.webp" alt="Moon" class="character-image" title="Moon">
+                    </div>
+                </div>
+                <pre class="story-text">${escapeHtml(text)}</pre>`;
+            } catch (err) {
+                content = `<h2>Error</h2><p>Could not load control.txt: ${escapeHtml(err.message)}</p>`;
+            }
+            break;
         case 'alone':
             try {
                 const res = await fetch('stories/alone.txt');
