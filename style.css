@@ -256,6 +256,16 @@ select {
     */
 }
 
+.custom-popover .vgenURL {
+    color: rgba(168, 4, 37, 0.788);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+.custom-popover .vgenURL:hover {
+    text-decoration: underline;
+}
+
 .custom-popover .quote {
     font-family: "Fuzzy Bubbles", sans-serif;
     letter-spacing: 0.1em;
