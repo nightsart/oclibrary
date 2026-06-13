@@ -53,6 +53,7 @@ const characters = [
     { imageURL: "images/riley.webp",     name: "Riley",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Riley Jones", rune:"Shapeshifting", runeURL:"images/riley_rune.webp", quote: "I'm still here." },
     { imageURL: "images/scarlet.webp",   name: "Scarlet",    categories: ["Human", "Female", "Dj", "Cops"],              rune:"Momentum control" },
     { imageURL: "images/shie.webp",      name: "Shie",       categories: ["Human", "Female", "Night", "Cops"],           fullName: "Kaeshi Shie", pronunciation: "SHE-eh", rune:"Freeze" },
+    { imageURL: "images/sin.webp",       name: "Sin",        categories: ["Human", "Male", "Night", "LSA"],              fullName: "Sinclair", pronunciation: "SIN-klair", species: "Human" },
     { imageURL: "images/skye.webp",      name: "Skye",       categories: ["NonH", "Female", "Night", "LSE"],             fullName: "Skye Lua</br>❝Gleaming Light❞ (Butterfly)", species: "Horror hybrid", ability:"Protection", quote: "You need not speak your pain for I can read it in your eyes." },
     { imageURL: "images/spectre.webp",   name: "Spectre",    categories: ["Human", "Male", "Dj", "envision"],             },
     { imageURL: "images/summer.webp",    name: "Summer",     categories: ["Human", "Female", "Night", "LSH"],            fullName: "Summer", quote: "Me? Nah, there's no way I'd be the final girl. More like the one who dies in the prologue." },
