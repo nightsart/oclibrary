@@ -70,6 +70,12 @@ p {
     text-align: center;
 }
 
+.pages {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
 .pages button {
     font-size: 0.75em;
     width: 100px;
@@ -294,4 +300,49 @@ select {
 
 .dropdown {
     position: relative;
+}
+
+.birthdayContainer {
+    width: min(1200px, 95vw);
+}
+
+.birthday-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 100%;
+}
+
+.birthday-month {
+    border: transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 0.5rem;
+}
+
+.birthday-month h2 {
+    color: #fff;
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+}
+
+.birthday-entries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.521vw;
+    align-items: flex-start;
+    color:#ccc;
+    font-size: 0.78rem;
+    line-height: 0.8;
+}
+
+.birthday-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.birthday-characters {
+    justify-content: flex-start;
 }
