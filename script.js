@@ -683,6 +683,19 @@ async function loadContent(page) {
                 content = `<h2>Error</h2><p>Could not load nm nap.txt: ${escapeHtml(err.message)}</p>`;
             }
             break;
+        case 'home':
+            content = `<div class="story-text" style="text-align: center;">
+                    <h3>Content Warning</h3>
+                    <p style="line-height: 0.8;">
+                        </br>The great majority of these stories contain mature and disturbing content.
+                        </br>They are entirely fictional and in no way are an endorsement of harmful behavior.
+                        </br>Reader discretion is advised.
+                    </p>
+                    <p>
+                        </br>Page created in October 2025, last added: Control & Live (Jan 9 2026)!
+                    </p>
+                </div>`;
+            break;
         default:
             content = '<h2>404 Not Found</h2>';
     }
