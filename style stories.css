@@ -28,7 +28,7 @@ body {
     font-size: 200%;
     color: #fff;
     margin-bottom: 2vh;
-    margin-top:5vh;
+    margin-top: 5vh;
     letter-spacing: 0.4em;
     min-width: 289.28px;
     text-align: center;
@@ -51,9 +51,7 @@ p {
 
 .pages {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 20px 0;
+    gap: 0.8rem;
 }
 
 .pages button {
@@ -66,7 +64,23 @@ p {
     color: #000;
     transition: background-color 0.3s linear, color 0.3s linear;
     cursor:pointer;
-    margin: 0 5px 2vw 5px;
+}
+
+.pages {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.pages button {
+    font-size: 0.75em;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00000000;
+    background-image: linear-gradient(100deg, #49494956, #ecececd8 170%);
+    color: #000;
+    transition: background-color 0.3s linear, color 0.3s linear;
+    cursor:pointer;
 }
 
 .pages button:hover {

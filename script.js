@@ -65,6 +65,7 @@ const characters = [
 ];
 
 const charactersContainer = document.querySelector('.characters');
+const galleryContainer = document.querySelector('.gallerypics');
 const searchInput = document.getElementById('searchCharacter');
 const filterButtons = document.querySelectorAll('.filters button');
 const sidebarThreshold = 962;
@@ -284,6 +285,120 @@ function displayBirthdaysGrouped() {
     initializePopovers();
 }
 
+function formatGalleryLabel(imagePath) {
+    const fileName = imagePath.split('/').pop() || imagePath;
+    const decodedName = decodeURIComponent(fileName).replace(/\.webp$/i, '');
+    const normalizedName = decodedName.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
+    const words = normalizedName.split(' ').filter(Boolean);
+
+    if (words.length <= 1) {
+        return normalizedName;
+    }
+
+    return words.slice(1).join(' ');
+}
+
+function normalizeGalleryImagePath(href) {
+    const cleanHref = decodeURIComponent(href.split('#')[0].split('?')[0].trim()).replace(/\\/g, '/');
+
+    if (!cleanHref) {
+        return '';
+    }
+
+    if (/^https?:\/\//i.test(cleanHref)) {
+        const url = new URL(cleanHref);
+        return url.pathname.replace(/^\/+/, '');
+    }
+
+    if (cleanHref.startsWith('/')) {
+        return cleanHref.replace(/^\/+/, '');
+    }
+
+    if (cleanHref.startsWith('images/gallery/')) {
+        return cleanHref;
+    }
+
+    return `images/gallery/${cleanHref.replace(/^\.\//, '')}`;
+}
+
+async function fetchGalleryDirectoryImages() {
+    try {
+        const response = await fetch('images/gallery/', { cache: 'no-store' });
+        if (!response.ok) {
+            return [];
+        }
+
+        const contentType = response.headers.get('content-type') || '';
+        if (!contentType.includes('text/html') && !contentType.includes('text/plain')) {
+            return [];
+        }
+
+        const markup = await response.text();
+        const parsed = new DOMParser().parseFromString(markup, 'text/html');
+        const imagePaths = [...parsed.querySelectorAll('a[href]')]
+            .map(link => link.getAttribute('href') || '')
+            .filter(href => /\.webp(?:[?#].*)?$/i.test(href))
+            .map(normalizeGalleryImagePath);
+
+        return [...new Set(imagePaths)].sort((left, right) => left.localeCompare(right));
+    } catch (_error) {
+        return [];
+    }
+}
+
+async function fetchGalleryManifestImages() {
+    try {
+        const response = await fetch('images/gallery/gallery-manifest.json', { cache: 'no-store' });
+        if (!response.ok) {
+            return [];
+        }
+
+        const payload = await response.json();
+        if (!Array.isArray(payload.images)) {
+            return [];
+        }
+
+        return payload.images
+            .filter(imagePath => /\.webp$/i.test(imagePath))
+            .map(normalizeGalleryImagePath)
+            .sort((left, right) => left.localeCompare(right));
+    } catch (_error) {
+        return [];
+    }
+}
+
+function buildGalleryFragment(imagePath) {
+    const label = formatGalleryLabel(imagePath);
+    const safeSrc = escapeHtml(encodeURI(imagePath));
+    const safeLabel = escapeHtml(label);
+
+    return `
+    <figure class="gallery-card">
+        <img src="${safeSrc}" alt="${safeLabel}" loading="lazy">
+        <figcaption>${safeLabel}</figcaption>
+    </figure>`;
+}
+
+async function displayGalleryImages() {
+    if (!galleryContainer) {
+        return;
+    }
+
+    galleryContainer.innerHTML = '<p class="gallery-status">Loading gallery...</p>';
+
+    let imagePaths = await fetchGalleryDirectoryImages();
+    if (imagePaths.length === 0) {
+        imagePaths = await fetchGalleryManifestImages();
+    }
+
+    if (imagePaths.length === 0) {
+        galleryContainer.innerHTML = '<p class="gallery-status">No gallery images found.</p>';
+        return;
+    }
+
+    galleryContainer.innerHTML = imagePaths.map(buildGalleryFragment).join('');
+}
+
 function w3_open() {
     var sidebar = document.getElementById("mySidebar");
     sidebar.dataset.openedAt = window.innerWidth;
@@ -364,6 +479,30 @@ if (charactersContainer && searchInput && filterButtons.length > 0) {
     window.addEventListener('resize', check_sidebar_resize);
     check_sidebar_resize();
 }
+
+displayGalleryImages();
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function DropBtn() {
+  document.getElementById("PagesDropBtn").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
 
 
 // stories.html specific code below
