@@ -1,13 +1,17 @@
 ﻿{
     "images":  [
+                   "images/gallery/common nyx glorp.webp",
+                   "images/gallery/common nyx nyan.webp",
+                   "images/gallery/common nyx small.webp",
                    "images/gallery/epic amy.webp",
                    "images/gallery/epic cherry buddy.webp",
                    "images/gallery/epic cherry.webp",
                    "images/gallery/epic dawn fox friend.webp",
-                   "images/gallery/epic fukure amy\u0027s.webp",
+                   "images/gallery/epic fukure amy.webp",
                    "images/gallery/epic fukure.webp",
                    "images/gallery/epic gwen.webp",
                    "images/gallery/epic kae bunny.webp",
+                   "images/gallery/epic kiko.webp",
                    "images/gallery/epic kishi.webp",
                    "images/gallery/epic mist.webp",
                    "images/gallery/epic night.webp",
@@ -16,6 +20,7 @@
                    "images/gallery/legendary 24 karat gold nyxbewbew.webp",
                    "images/gallery/legendary boss.webp",
                    "images/gallery/legendary dj.webp",
+                   "images/gallery/legendary spectre.webp",
                    "images/gallery/rare aaron.webp",
                    "images/gallery/rare azure.webp",
                    "images/gallery/rare cara.webp",
@@ -24,7 +29,6 @@
                    "images/gallery/rare dolly.webp",
                    "images/gallery/rare dorothea.webp",
                    "images/gallery/rare fc25.webp",
-                   "images/gallery/rare kiko.webp",
                    "images/gallery/rare kyra.webp",
                    "images/gallery/rare lyra.webp",
                    "images/gallery/rare melissa.webp",
@@ -34,10 +38,12 @@
                    "images/gallery/rare skye gleaming butterfly.webp",
                    "images/gallery/rare summer.webp",
                    "images/gallery/rare vanilla.webp",
-                   "images/gallery/special dawn, timeless embrace.webp",
-                   "images/gallery/special kaelani.webp",
+                   "images/gallery/special dawn timeless embrace.webp",
+                   "images/gallery/special evan.webp",
+                   "images/gallery/special ghost.webp",
                    "images/gallery/special kae familiar.webp",
+                   "images/gallery/special kaelani.webp",
                    "images/gallery/special kiara.webp",
-                   "images/gallery/special nyx, symphony of beyond.webp"
+                   "images/gallery/special nyx symphony of beyond.webp"
                ]
 }
