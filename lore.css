@@ -65,7 +65,7 @@ body {
     gap: 0.25rem;
     color: #f3f3f3;
     max-width:75vw;
-    background: rgba(8, 8, 8, 0.5);
+    background: rgba(8, 8, 8, 0.666);
     border-radius: 18px;
     padding: 0.5rem 2rem 0.5rem 2rem;
     margin-top: 1.5rem;
@@ -86,13 +86,14 @@ body {
     padding-top: 1.5rem;
 }
 
-.lore-sections h2#eyes + p,
-.lore-sections h2#blood + p {
+.lore-sections h2#stories + p{
     text-indent: 1.5rem;
 }
 
 .lore-sections .br-space {
     display: block;
+    margin-top: 0.6rem;
+    text-indent: 1.5rem;
     font-family: "Spectral", serif;
     font-weight: 300;
 }
