@@ -37,6 +37,9 @@ function buildPopupContent(character) {
     if (Object.hasOwn(character, "bDay")) {
         popupContent += `Birthday: <span class='birthday'>${character.bMonth} ${character.bDay}</span><br/>`;
     }
+    if (Object.hasOwn(character, "parents")) {
+        popupContent += `Parents: <span class='parents'>${character.parents}</span><br/>`;
+    }
     if (Object.hasOwn(character, "vgenURL")) {
         popupContent += `<a href=${character.vgenURL} class='vgenURL' target='_blank'>VGEN Link ↗</a><br/>`;
     }
@@ -391,6 +394,13 @@ if (charactersContainer && searchInput && filterButtons.length > 0) {
             }
             if (button.dataset.story == "lost souls") {
                 document.querySelectorAll('.filters button.pressed[data-story="Runes"]').forEach(button => button.classList.remove('pressed'));
+            }
+
+            if (button.dataset.category == "LSH") {
+                document.querySelectorAll('.filters button.pressed[data-category="LSE"]').forEach(button => button.classList.remove('pressed'));
+            }
+            if (button.dataset.category == "LSE") {
+                document.querySelectorAll('.filters button.pressed[data-category="LSH"]').forEach(button => button.classList.remove('pressed'));
             }
 
             if (button.dataset.owner == "Nights") {
