@@ -1,6 +1,6 @@
 window.CHARACTERS = [
     { imageURL: "images/icons/aaron.webp",     name: "Aaron",      categories: ["Human", "Male", "Night", "Gang"],             rune:"Shadows Manipulation", bDay:"26", bMonth:"January", quote: "You're perfect the way you are.", },
-    { imageURL: "images/icons/alyssa.webp",    name: "Alyssa",     categories: ["Human", "Female", "Dj", "Others"],            rune:"None", bMonth:"TBD", quote:"I got to see the entire journey." },
+    { imageURL: "images/icons/alyssa.webp",    name: "Alyssa",     categories: ["Human", "Female", "Dj", "Others"],            rune:"None", bMonth:"TBD", quote:"Please… remember me." },
     { imageURL: "images/icons/amy.webp",       name: "Amy",        categories: ["Human", "Female", "Night", "Gang"],           fullName: "Kawa Amy (Ishikawa Kira)", rune:"Nightmare", bDay:"12", bMonth:"August", quote: "Don't get all shy, now~ Tonight has only just begun!", runeURL:"images/runes/amy_rune.webp", vgenURL:"https://vsona.co/amyk", },
     { imageURL: "images/icons/anko.webp",      name: "Anko",       categories: ["Human", "Female", "Night", "Others"],         fullName: "Kamei Anko", rune:"None", bDay:"19", bMonth:"November", quote: "Actually, I was going to eat th- Nevermind, it's fine.", },
     { imageURL: "images/icons/ash.webp",       name: "Arsonist",   categories: ["Human", "Male", "Dj", "envision", "Others"],  fullName: "Ashton 'Ash' Grey", rune:"Bonds", bMonth:"Unknown", quote: "No." },

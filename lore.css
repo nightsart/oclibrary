@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fuzzy+Bubbles:wght@400;700&family=Quicksand:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.toc-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 16.8px;
+    max-height: 16.8px;
+    font-size: 0.75em;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(100deg, #49494956, #ecececd8 170%);
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1;
+    transition: background-color 0.3s linear, color 0.3s linear;
+    flex-shrink: 0;
+}
+
+.toc-link:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.toc-h3 {
+    width: 68px;
+    min-width: 68px;
+    max-width: 68px;
+    min-height: 16.8px;
+    max-height: 16.8px;
+    font-size: 0.66em;
+    margin-left: 0.9rem;
+    opacity: 0.85;
+    text-align: center;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    flex-shrink: 0;
+}
+
+#lore-toc .toc-h2 {
+    margin-top: 0.8rem;
+}
+
+#lore-toc .toc-h2:first-child {
+    margin-top: 0;
+}
+
+.lore-sections {
+    width: min(1100px, 90vw);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    color: #f3f3f3;
+    max-width:75vw;
+    background: rgba(8, 8, 8, 0.5);
+    border-radius: 18px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+}
+
+.lore-sections h2,
+.lore-sections h3 {
+    color: #fff;
+    letter-spacing: 0.12em;
+    margin-top: 0.5rem;
+}
+
+.lore-sections h2 {
+    font-size: 1.35rem;
+    margin-left: 3.5rem;
+    padding-top: 1.5rem;
+}
+
+.lore-sections h2#eyes + p,
+.lore-sections h2#blood + p {
+    text-indent: 1.5rem;
+}
+
+.lore-sections .br-space {
+    display: block;
+    font-family: "Spectral", serif;
+    font-weight: 300;
+}
+
+.lore-sections h3 {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+
+.lore-sections p {
+    min-height: 1.1rem;
+    margin: 0 0 1rem 0;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    padding-bottom: 0.5rem;
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+    #lore-toc {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 0.45rem;
+        column-gap: 0.75rem;
+    }
+
+    .toc-link,
+    .toc-h3 {
+        width: 80px;
+        min-width: 80px;
+        max-width: 80px;
+    }
+
+    .toc-h3 {
+        width: 68px;
+        min-width: 68px;
+        max-width: 68px;
+    }
+}
