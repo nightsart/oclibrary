@@ -49,7 +49,7 @@ window.CHARACTERS = [
     { imageURL: "images/icons/oscar.webp",     name: "Oscar",      categories: ["Human", "Male", "Dj", "Others", "Pin"],              fullName: "Oscar 'Ozzie' Black", rune:"Voodoo doll", bMonth:"TBD", quote:"I can replace that in like two seconds. Hold on." },
     { imageURL: "images/icons/pandora.webp",   name: "Pandora",    categories: ["Human", "Female", "Night", "envision"],       fullName: "CB071", rune:"Toxicity - Energy steal - Blink", bMonth:"Unknown", quote: "Your hubris seems to outweigh your survival instinct." },
     { imageURL: "images/icons/penny.webp",     name: "Penny",      categories: ["Human", "Female", "Night", "Gang"],           fullName: "Penthesilea Parker", rune:"Faster healing", bDay:"25", bMonth:"June", quote: "Nyx, I said not to- Whatever..." },
-    { imageURL: "images/icons/rae.webp",       name: "Rae",        categories: ["Human", "Female", "Dj", "Others", "Kids"],    fullName: "Fukure Rae", rune:"Tsukuyomi", bMonth:"Unknown", parents:"Fukure & Amy" },
+    { imageURL: "images/icons/rae.webp",       name: "Rae",        categories: ["Human", "Female", "Dj", "Kids"],              fullName: "Fukure Rae", rune:"Tsukuyomi", bMonth:"Unknown", parents:"Fukure & Amy" },
     { imageURL: "images/icons/riley.webp",     name: "Riley",      categories: ["Human", "Female", "Night", "Others"],         fullName: "Riley Jones", rune:"Shapeshifting", runeURL:"images/runes/riley_rune.webp", bDay:"1", bMonth:"December", quote: "I'm still here." },
     { imageURL: "images/icons/scarlet.webp",   name: "Scarlet",    categories: ["Human", "Female", "Dj", "Cops"],              rune:"Momentum control", bDay:"21", bMonth:"July", quote: "I know everything will be okay." },
     { imageURL: "images/icons/shadows.webp",   name: "Shadows",    categories: ["Human", "Male", "Dj", "Cops"],                fullname:"??? & ???", rune:"??? & ???", bMonth:"Unknown" },
@@ -61,6 +61,6 @@ window.CHARACTERS = [
     { imageURL: "images/icons/tyler.webp",     name: "Tyler",      categories: ["Human", "Male", "Night", "Others"],           rune:"None", bDay:"11", bMonth:"September", quote: "Gwen..." },
     { imageURL: "images/icons/vanilla.webp",   name: "Vanilla",    categories: ["NonH", "Female", "Night", "Gang", "Others"],  fullName: "Vanilla Wafer or Nilla</br>(Fabularis Ciuem</br>Branch 4 Version 7)", species: "Android", rune:"None", bDay:"13", bMonth:"May", quote: "What can I help you with, Master?", vgenURL:"https://vsona.co/vanillawafer", },
     { imageURL: "images/icons/wendy.webp",     name: "Wendy",      categories: ["Human", "Female", "Night", "Cops", "Others",],fullName: "Wendy Macie Harmon", rune:"Metal manipulation", runeURL:"images/runes/wendy_rune.webp", vgenURL:"https://vsona.co/wendyharmon", bDay:"6", bMonth:"November", quote: "'Sup?", },
-    { imageURL: "images/icons/winter.webp",    name: "Winter",     categories: ["Human", "Female", "Dj", "Others", "Kids"],    bMonth:"Unknown", parents:"DJ & Kiko" },
+    { imageURL: "images/icons/winter.webp",    name: "Winter",     categories: ["Human", "Female", "Dj", "Kids"],              bMonth:"Unknown", parents:"DJ & Kiko" },
     { imageURL: "images/icons/redacted.webp",  name: "[Redacted]", categories: ["Human", "Male", "Dj", "Others"],              rune:"???", bMonth:"Unknown" },
 ];
